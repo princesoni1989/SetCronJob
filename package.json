@@ -1,0 +1,27 @@
+{
+  "name": "setcronjob",
+  "version": "1.0.0",
+  "description": "Api for online schedular",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/princesoni1989/SetCronJob.git"
+  },
+  "keywords": [
+    "node",
+    "cron",
+    "schedular"
+  ],
+  "author": "Prince Soni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/princesoni1989/SetCronJob/issues"
+  },
+  "homepage": "https://github.com/princesoni1989/SetCronJob#readme",
+  "dependencies": {
+    "request": "^2.69.0"
+  }
+}
