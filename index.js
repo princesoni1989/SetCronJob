@@ -3,18 +3,20 @@ var cron = require('./lib/cron');
 var group = require('./lib/group');
 var server = require('./lib/server');
 
-
+/**
+ *
+ * @param config
+ * @returns {SetCronJob}
+ * @constructor
+ */
 function SetCronJob(config){
     if (!(this instanceof SetCronJob))
         return new SetCronJob(config);
 
-    this.key = config && config.key ;
-    SetCronJob.prototype.account = new account(this.key);
-    SetCronJob.prototype.cron = new cron(this.key);
-    SetCronJob.prototype.group = new group(this.key);
-    SetCronJob.prototype.server = new server(this.key);
+    this.token = config && config.token ;
+    SetCronJob.prototype.account = new account(this.token);
+    SetCronJob.prototype.cron = new cron(this.token);
+    SetCronJob.prototype.group = new group(this.token);
+    SetCronJob.prototype.server = new server(this.token);
 }
-//if(! this.token){
-//    throw new Error(Errors.No_Access_Token);
-//}
 module.exports = SetCronJob;

@@ -6,11 +6,11 @@ var request = require('request');
 var baseUrl = 'https://www.setcronjob.com/api/'
 var token = config.cron.apiKey;
 
-exports.addCron = function (params, callback) {
+exports.addCron = function (options, params, callback) {
   var addCronRequest = {
-    'url': baseUrl + 'cron.add',
+    'url': baseUrl + options.method,
     'rejectUnauthorized': false,
-    'method': 'get',
+    'method': options.methodType,
     qs: {
       token: token,
       month: params.month,
