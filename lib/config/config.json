@@ -1,0 +1,97 @@
+{
+  "baseUrl": "https://www.setcronjob.com/api/",
+  "methods": {
+    "account": {
+      "edit": {
+        "method": "account.edit",
+        "type": "get"
+      }
+    },
+    "group": {
+      "list": {
+        "method": "group.list",
+        "type": "get"
+      },
+      "get": {
+        "method": "group.get",
+        "type": "get"
+      },
+      "add": {
+        "method": "group.add",
+        "type": "get"
+      },
+      "edit": {
+        "method": "group.edit",
+        "type": "get"
+      },
+      "delete": {
+        "method": "group.delete",
+        "type": "get"
+      },
+      "vanish": {
+        "method": "group.vanish",
+        "type": "get"
+      },
+      "empty": {
+        "method": "group.empty",
+        "type": "get"
+      }
+    },
+    "server": {
+      "time": {
+        "method": "server.time",
+        "type": "get"
+      },
+      "timezones": {
+        "method": "server.timezones",
+        "type": "get"
+      },
+      "useragent": {
+        "method": "server.useragent",
+        "type": "get"
+      },
+      "ip": {
+        "method": "server.ip",
+        "type": "get"
+      }
+    },
+    "cron": {
+      "list": {
+        "method": "cron.list",
+        "type": "get"
+      },
+      "get": {
+        "method": "cron.get",
+        "type": "get"
+      },
+      "add": {
+        "method": "cron.add",
+        "type": "get"
+      },
+      "edit": {
+        "method": "cron.edit",
+        "type": "get"
+      },
+      "enable": {
+        "method": "cron.enable",
+        "type": "get"
+      },
+      "disable": {
+        "method": "cron.disable",
+        "type": "get"
+      },
+      "delete": {
+        "method": "cron.delete",
+        "type": "get"
+      },
+      "run": {
+        "method": "cron.run",
+        "type": "get"
+      },
+      "logs": {
+        "method": "cron.logs",
+        "type": "get"
+      }
+    }
+  }
+}

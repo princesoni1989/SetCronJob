@@ -1,3 +1,23 @@
+var setCronJob = require('../index');
+var cronJob = new setCronJob('xxxxxxxx');
+
+//Edit account
+var params = {
+    timezone: 'Asia/kolkatta'
+}
+cronJob.account.edit(params, function (err, result) {
+    printResult(err, result);
+})
+
 /**
- * Created by princesoni on 3/13/16.
+ *
+ * @param err
+ * @param result
  */
+function printResult(err, result){
+    if (err) {
+        console.log("Error : ", err)
+    } else {
+        console.log("Result : ", result)
+    }
+}
