@@ -4,7 +4,7 @@ var group = require('./lib/group');
 var server = require('./lib/server');
 
 /**
- * Initailize object
+ * Initialize object
  * @param config
  * @constructor
  */

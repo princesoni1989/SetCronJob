@@ -1,90 +1,65 @@
 var setCronJob = require('../index');
 var cronJob = new setCronJob('xxxxxxxx');
 
-//Edit account
-var params = {
-    timezone: 'Asia/kolkatta'
-}
-cronJob.account.edit(params, function (err, result) {
+//list group
+cronJob.group.list(function (err, result) {
     printResult(err, result);
-})
+});
 
 
-//Edit account
+//Get group
 var params = {
-    timezone: 'Asia/kolkatta'
-}
-cronJob.account.edit(params, function (err, result) {
+    id: 'xyz'
+};
+cronJob.group.get(params, function (err, result) {
     printResult(err, result);
-})
+});
 
-//Edit account
+
+//Add group
 var params = {
-    timezone: 'Asia/kolkatta'
-}
-cronJob.account.edit(params, function (err, result) {
+    name: 'test-group'
+};
+cronJob.group.add(params, function (err, result) {
     printResult(err, result);
-})
+});
 
-//Edit account
+
+//Edit group
 var params = {
-    timezone: 'Asia/kolkatta'
-}
-cronJob.account.edit(params, function (err, result) {
+    id: 'xyz',
+    name: 'test-edit'
+};
+cronJob.group.edit(params, function (err, result) {
     printResult(err, result);
-})
+});
 
-//Edit account
+
+//Delete group
 var params = {
-    timezone: 'Asia/kolkatta'
-}
-cronJob.account.edit(params, function (err, result) {
+    id: 'xyz'
+};
+cronJob.group.delete(params, function (err, result) {
     printResult(err, result);
-})
+});
 
-//Edit account
+
+//Vanish group
 var params = {
-    timezone: 'Asia/kolkatta'
-}
-cronJob.account.edit(params, function (err, result) {
+    id: 'xyz'
+};
+cronJob.group.vanish(params, function (err, result) {
     printResult(err, result);
-})
+});
 
 
-//Edit account
+//Emp†y group
 var params = {
-    timezone: 'Asia/kolkatta'
-}
-cronJob.account.edit(params, function (err, result) {
+    id: 'xyz'
+};
+cronJob.group.empty(params, function (err, result) {
     printResult(err, result);
-})
-
-
-//Edit account
-var params = {
-    timezone: 'Asia/kolkatta'
-}
-cronJob.account.edit(params, function (err, result) {
-    printResult(err, result);
-})
-
-
-//Edit account
-var params = {
-    timezone: 'Asia/kolkatta'
-}
-cronJob.account.edit(params, function (err, result) {
-    printResult(err, result);
-})
-
-
-//Edit account
-var params = {
-    timezone: 'Asia/kolkatta'
-}
-cronJob.account.edit(params, function (err, result) {
-    printResult(err, result);
-})
+});
 
 
 /**

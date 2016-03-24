@@ -4,10 +4,10 @@ var cronJob = new setCronJob('xxxxxxxx');
 //Edit account
 var params = {
     timezone: 'Asia/kolkatta'
-}
+};
 cronJob.account.edit(params, function (err, result) {
     printResult(err, result);
-})
+});
 
 /**
  *
