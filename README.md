@@ -27,7 +27,7 @@ cronJob.cron.list(function (err, result) {
 You will need valid Setcronjob Token to work with this module, Yu can obtain token after signing up (https://www.setcronjob.com/)
 
 
-## Cron Job
+## Cron Job:
 
 ```javascript
 var setCronJob = require('setcronjob');
@@ -149,7 +149,7 @@ cronJob.cron.logs(params, function (err, result) {
 });
 ```
 
-## Account job
+## Account job:
 
 ```javascript
 var setCronJob = require('setcronjob');
@@ -168,7 +168,7 @@ cronJob.account.edit(params, function (err, result) {
 
 ```
 
-## Group Job
+## Group Job:
 
 ```javascript
 var setCronJob = require('setcronjob');
@@ -259,7 +259,7 @@ cronJob.group.empty(params, function (err, result) {
 
 ```
 
-## Server Job
+## Server Job:
 ```javascript
 var setCronJob = require('setcronjob');
 var cronJob = new setCronJob('xxxxxxxx');
