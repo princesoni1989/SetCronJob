@@ -152,6 +152,11 @@ cronJob.cron.logs(params, function (err, result) {
 ## Account job
 
 ```javascript
+var setCronJob = require('setcronjob');
+var cronJob = new setCronJob('xxxxxxxx');
+```
+
+```javascript
 
 //Edit account
 var params = {
@@ -164,6 +169,12 @@ cronJob.account.edit(params, function (err, result) {
 ```
 
 ## Group Job
+
+```javascript
+var setCronJob = require('setcronjob');
+var cronJob = new setCronJob('xxxxxxxx');
+```
+
 ```javascript
 
 //list group
@@ -249,6 +260,11 @@ cronJob.group.empty(params, function (err, result) {
 ```
 
 ## Server Job
+```javascript
+var setCronJob = require('setcronjob');
+var cronJob = new setCronJob('xxxxxxxx');
+```
+
 
 ```javascript
 
