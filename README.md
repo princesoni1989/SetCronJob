@@ -20,15 +20,15 @@ cronJob.cron.list(function (err, result) {
 
 ## Installation
 
-`npm install setcronjob //install local`
+`npm install setcronjob  //install locally`
 
-`npm install -g setcronjob //install globly`
+`npm install -g setcronjob  //install globally`
 
-`npm install setcronjob --save//install locally and save to package json`
+`npm install setcronjob --save  //install locally and save to package json`
 
 ## Quick Start
 
-You will need valid Setcronjob Token to work with this module, Yu can obtain token after signing up (https://www.setcronjob.com/)
+You will need valid Setcronjob Token to work with this module, You can obtain token after signing up (https://www.setcronjob.com/)
 
 
 ## Cron Job:
