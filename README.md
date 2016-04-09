@@ -27,20 +27,19 @@ cronJob.cron.list(function (err, result) {
 You will need valid Setcronjob Token to work with this module, Yu can obtain token after signing up (https://www.setcronjob.com/)
 
 
-## Cron
+## Cron Job
+
 ```javascript
 var setCronJob = require('setcronjob');
 var cronJob = new setCronJob('xxxxxxxx');
 ```
 
-## List:
 ```javascript
 //list cron for a token
 cronJob.cron.list(function (err, result) {
     printResult(err, result);
 });
 ```
-## Get:
 ```javascript
 //get one cron job information
 var params = {
@@ -51,7 +50,6 @@ cronJob.cron.get(params, function (err, result) {
 });
 ```
 
-## Add Corn:
 ```javascript
 
 //Add cron job
@@ -71,7 +69,6 @@ cronJob.cron.add(params, function (err, result) {
 
 ```
 
-## Update Cron:
 ```javascript
 
 //Edit cron
@@ -91,7 +88,7 @@ cronJob.cron.edit(params, function (err, result) {
 });
 
 ```
-## Enable Cron:
+
 
 ```javascript
 //Enable cron
@@ -105,8 +102,6 @@ cronJob.cron.enable(params, function (err, result) {
 ```
 
 
-## Disable Cron:
-
 ```javascript
 
 //Disable cron
@@ -118,7 +113,6 @@ cronJob.cron.disable(params, function (err, result) {
 });
 ```
 
-## Delete Cron:
 
 ```javascript
 
@@ -131,7 +125,6 @@ cronJob.cron.delete(params, function (err, result) {
 });
 ```
 
-## Run Cron:
 
 ```javascript
 
@@ -144,21 +137,6 @@ cronJob.cron.run(params, function (err, result) {
 })
 ```
 
-## Run Cron:
-
-```javascript
-
-//run cron
-var params = {
-    id: 'xyz'
-};
-cronJob.cron.run(params, function (err, result) {
-    printResult(err, result);
-})
-```
-
-
-## Get log Cron:
 
 ```javascript
 
@@ -169,6 +147,146 @@ var params = {
 cronJob.cron.logs(params, function (err, result) {
     printResult(err, result);
 });
+```
+
+## Account job
+
+```javascript
+
+//Edit account
+var params = {
+    timezone: 'Asia/kolkatta'
+};
+cronJob.account.edit(params, function (err, result) {
+    printResult(err, result);
+});
+
+```
+
+## Group Job
+```javascript
+
+//list group
+cronJob.group.list(function (err, result) {
+    printResult(err, result);
+});
+
+```
+
+```javascript
+
+//Get group
+var params = {
+    id: 'xyz'
+};
+cronJob.group.get(params, function (err, result) {
+    printResult(err, result);
+});
+
+```
+
+```javascript
+
+//Add group
+var params = {
+    name: 'test-group'
+};
+cronJob.group.add(params, function (err, result) {
+    printResult(err, result);
+});
+
+```
+
+```javascript
+
+//Edit group
+var params = {
+    id: 'xyz',
+    name: 'test-edit'
+};
+cronJob.group.edit(params, function (err, result) {
+    printResult(err, result);
+});
+
+```
+
+
+```javascript
+
+//Delete group
+var params = {
+    id: 'xyz'
+};
+cronJob.group.delete(params, function (err, result) {
+    printResult(err, result);
+});
+
+```
+
+```javascript
+
+//Vanish group
+var params = {
+    id: 'xyz'
+};
+cronJob.group.vanish(params, function (err, result) {
+    printResult(err, result);
+});
+
+```
+
+
+```javascript
+
+//Emp†y group
+var params = {
+    id: 'xyz'
+};
+cronJob.group.empty(params, function (err, result) {
+    printResult(err, result);
+});
+
+```
+
+## Server Job
+
+```javascript
+
+//Get server time
+cronJob.server.get(function (err, result) {
+    printResult(err, result);
+});
+
+```
+
+
+```javascript
+
+//get supported time zones
+cronJob.server.timezones(function (err, result) {
+    printResult(err, result);
+});
+
+```
+
+
+```javascript
+
+//get user agents
+cronJob.server.userAgent(function (err, result) {
+    printResult(err, result);
+});
+
+```
+
+
+```javascript
+
+//get server ip
+cronJob.server.ip(function (err, result) {
+    printResult(err, result);
+});
+
 ```
 
 
