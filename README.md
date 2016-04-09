@@ -10,7 +10,7 @@ var cronJob = new setCronJob('xxxxxxxx');
 
 //list cron for a token
 cronJob.cron.list(function (err, result) {
-     if (err) {
+    if (err) {
         console.log("Error : ", err)
     } else {
         console.log("Result : ", result)
@@ -37,7 +37,11 @@ var cronJob = new setCronJob('xxxxxxxx');
 ```javascript
 //list cron for a token
 cronJob.cron.list(function (err, result) {
-    printResult(err, result);
+    if (err) {
+        console.log("Error : ", err)
+    } else {
+        console.log("Result : ", result)
+    }
 });
 ```
 ```javascript
@@ -46,7 +50,11 @@ var params = {
     id: 'xxxxxx'
 };
 cronJob.cron.get(params, function (err, result) {
-    printResult(err, result);
+    if (err) {
+        console.log("Error : ", err)
+    } else {
+        console.log("Result : ", result)
+    }
 });
 ```
 
@@ -64,7 +72,11 @@ var params = {
     httpMethod: 'POST'
 };
 cronJob.cron.add(params, function (err, result) {
-    printResult(err, result);
+    if (err) {
+        console.log("Error : ", err)
+    } else {
+        console.log("Result : ", result)
+    }
 });
 
 ```
@@ -84,7 +96,11 @@ var params = {
     httpMethod: 'POST'
 };
 cronJob.cron.edit(params, function (err, result) {
-    printResult(err, result);
+    if (err) {
+        console.log("Error : ", err)
+    } else {
+        console.log("Result : ", result)
+    }
 });
 
 ```
@@ -96,7 +112,11 @@ var params = {
     id: 'xyz'
 };
 cronJob.cron.enable(params, function (err, result) {
-    printResult(err, result);
+    if (err) {
+        console.log("Error : ", err)
+    } else {
+        console.log("Result : ", result)
+    }
 });
 
 ```
@@ -109,7 +129,11 @@ var params = {
     id: 'xyz'
 };
 cronJob.cron.disable(params, function (err, result) {
-    printResult(err, result);
+    if (err) {
+        console.log("Error : ", err)
+    } else {
+        console.log("Result : ", result)
+    }
 });
 ```
 
@@ -121,7 +145,11 @@ var params = {
     id: 'xyz'
 };
 cronJob.cron.delete(params, function (err, result) {
-    printResult(err, result);
+    if (err) {
+        console.log("Error : ", err)
+    } else {
+        console.log("Result : ", result)
+    }
 });
 ```
 
@@ -133,7 +161,11 @@ var params = {
     id: 'xyz'
 };
 cronJob.cron.run(params, function (err, result) {
-    printResult(err, result);
+    if (err) {
+        console.log("Error : ", err)
+    } else {
+        console.log("Result : ", result)
+    }
 })
 ```
 
@@ -145,7 +177,11 @@ var params = {
     id: 'xyz'
 };
 cronJob.cron.logs(params, function (err, result) {
-    printResult(err, result);
+    if (err) {
+        console.log("Error : ", err)
+    } else {
+        console.log("Result : ", result)
+    }
 });
 ```
 
@@ -163,7 +199,11 @@ var params = {
     timezone: 'Asia/kolkatta'
 };
 cronJob.account.edit(params, function (err, result) {
-    printResult(err, result);
+    if (err) {
+        console.log("Error : ", err)
+    } else {
+        console.log("Result : ", result)
+    }
 });
 
 ```
@@ -179,7 +219,11 @@ var cronJob = new setCronJob('xxxxxxxx');
 
 //list group
 cronJob.group.list(function (err, result) {
-    printResult(err, result);
+    if (err) {
+        console.log("Error : ", err)
+    } else {
+        console.log("Result : ", result)
+    }
 });
 
 ```
@@ -191,7 +235,11 @@ var params = {
     id: 'xyz'
 };
 cronJob.group.get(params, function (err, result) {
-    printResult(err, result);
+    if (err) {
+        console.log("Error : ", err)
+    } else {
+        console.log("Result : ", result)
+    }
 });
 
 ```
@@ -203,7 +251,11 @@ var params = {
     name: 'test-group'
 };
 cronJob.group.add(params, function (err, result) {
-    printResult(err, result);
+    if (err) {
+        console.log("Error : ", err)
+    } else {
+        console.log("Result : ", result)
+    }
 });
 
 ```
@@ -216,7 +268,11 @@ var params = {
     name: 'test-edit'
 };
 cronJob.group.edit(params, function (err, result) {
-    printResult(err, result);
+    if (err) {
+        console.log("Error : ", err)
+    } else {
+        console.log("Result : ", result)
+    }
 });
 
 ```
@@ -229,7 +285,11 @@ var params = {
     id: 'xyz'
 };
 cronJob.group.delete(params, function (err, result) {
-    printResult(err, result);
+    if (err) {
+        console.log("Error : ", err)
+    } else {
+        console.log("Result : ", result)
+    }
 });
 
 ```
@@ -241,7 +301,11 @@ var params = {
     id: 'xyz'
 };
 cronJob.group.vanish(params, function (err, result) {
-    printResult(err, result);
+    if (err) {
+        console.log("Error : ", err)
+    } else {
+        console.log("Result : ", result)
+    }
 });
 
 ```
@@ -254,7 +318,11 @@ var params = {
     id: 'xyz'
 };
 cronJob.group.empty(params, function (err, result) {
-    printResult(err, result);
+    if (err) {
+        console.log("Error : ", err)
+    } else {
+        console.log("Result : ", result)
+    }
 });
 
 ```
@@ -270,7 +338,11 @@ var cronJob = new setCronJob('xxxxxxxx');
 
 //Get server time
 cronJob.server.get(function (err, result) {
-    printResult(err, result);
+    if (err) {
+        console.log("Error : ", err)
+    } else {
+        console.log("Result : ", result)
+    }
 });
 
 ```
@@ -280,7 +352,11 @@ cronJob.server.get(function (err, result) {
 
 //get supported time zones
 cronJob.server.timezones(function (err, result) {
-    printResult(err, result);
+    if (err) {
+        console.log("Error : ", err)
+    } else {
+        console.log("Result : ", result)
+    }
 });
 
 ```
@@ -290,7 +366,11 @@ cronJob.server.timezones(function (err, result) {
 
 //get user agents
 cronJob.server.userAgent(function (err, result) {
-    printResult(err, result);
+    if (err) {
+        console.log("Error : ", err)
+    } else {
+        console.log("Result : ", result)
+    }
 });
 
 ```
@@ -300,7 +380,11 @@ cronJob.server.userAgent(function (err, result) {
 
 //get server ip
 cronJob.server.ip(function (err, result) {
-    printResult(err, result);
+    if (err) {
+        console.log("Error : ", err)
+    } else {
+        console.log("Result : ", result)
+    }
 });
 
 ```
