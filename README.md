@@ -20,7 +20,11 @@ cronJob.cron.list(function (err, result) {
 
 ## Installation
 
-`npm install setcronjob`
+`npm install setcronjob //install local`
+
+`npm install -g setcronjob //install globly`
+
+`npm install setcronjob --save//install locally and save to package json`
 
 ## Quick Start
 
