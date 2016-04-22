@@ -396,7 +396,8 @@ cronJob.server.ip(function (err, result) {
 });
 
 ```
-
+## Tests
+To run tests type npm test. For coverage type npm run coverage
 
 ## Examples
 
