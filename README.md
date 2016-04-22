@@ -6,6 +6,8 @@
   For more information on the API request and responses visit the [SetCronJob API docs] (https://www.setcronjob.com/documentation/api) 
   
 
+## Example
+
 ```javascript
 var setCronJob = require('setcronjob');
 var cronJob = new setCronJob('xxxxxxxx');
