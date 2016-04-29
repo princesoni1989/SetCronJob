@@ -8,11 +8,11 @@ var server = require('./lib/server');
  * @param config
  * @constructor
  */
-function SetCronJob(config){
+function SetCronJob(token){
     if (!(this instanceof SetCronJob))
-        return new SetCronJob(config);
+        return new SetCronJob(token);
 
-    this.token = config && config.token ;
+    this.token = token ;
 
     SetCronJob.prototype.account = new account(this.token);
     SetCronJob.prototype.cron = new cron(this.token);

@@ -3,7 +3,7 @@ var cronJob = new setCronJob('xxxxxxxx');
 
 //Edit account
 var params = {
-    timezone: 'Asia/kolkatta'
+    timezone: 'Asia/Kolkata'
 };
 cronJob.account.edit(params, function (err, result) {
     printResult(err, result);

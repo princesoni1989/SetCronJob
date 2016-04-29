@@ -4,12 +4,12 @@
 var should = require('should');
 var account = require('../lib/account');
 var testData = require('./testData/testData');
-var token = 'me5qqyny91u9bzfd6k6nfcinsa9gzulj'
+var token = 'xxxxxx'
 
 /**
  * Test cases for Account
  */
-describe.skip('Account', function () {
+describe('Account', function () {
     this.timeout(100000000);
 
     /**

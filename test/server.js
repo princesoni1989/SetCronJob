@@ -3,7 +3,7 @@
  */
 var server = require('../lib/server');
 var should = require('should');
-var token = 'rtc782qsjrm8pzlca4870wgmhgq2001r';
+var token = 'xxxxxx';
 
 /**
  * Test cases for Server

@@ -1,7 +1,7 @@
 # SetCronJob Client Library for Node.js
 
   This module provides calls to the [SetCronJob] (https://www.setcronjob.com/) API for Nodejs.
-  Setcronjob module provides you feature to set online schedulars for your application. This schedulars can call any api or task on on your serve corresponding to different time settings. You can retriever your daily log  with respective execution results and can enable and disable schedulars easily.
+  Setcronjob module provides you feature to set online schedulars for your application. This schedulars can call any api or task on on your server corresponding to different time settings. You can retriever your daily log  with respective execution results and can enable and disable schedulars easily.
   
   For more information on the API request and responses visit the [SetCronJob API docs] (https://www.setcronjob.com/documentation/api) 
   
@@ -397,7 +397,8 @@ cronJob.server.ip(function (err, result) {
 
 ```
 ## Tests
-To run tests type npm test. For coverage type npm run coverage
+To run tests type npm test.
+To run tests with coverage type npm coverage.
 
 ## Examples
 

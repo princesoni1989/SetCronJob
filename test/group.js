@@ -4,7 +4,7 @@
 var should = require('should');
 var group = require('../lib/group');
 var testData = require('./testData/testData');
-var token = 'rtc782qsjrm8pzlca4870wgmhgq2001r';
+var token = 'xxxxxx';
 
 /**
  * Test cases for Group

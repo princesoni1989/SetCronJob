@@ -4,7 +4,7 @@
 var should = require('should');
 var cron = require('../lib/cron');
 var testData = require('./testData/testData');
-var token = 'rtc782qsjrm8pzlca4870wgmhgq2001r';
+var token = 'xxxxxx';
 
 /**
  * Test cases for Cron
@@ -45,7 +45,7 @@ describe('Cron', function () {
 
         it('should update cron ', function (done) {
             params.month++;
-            cronObj.update(params, function (err, result) {
+            cronObj.edit(params, function (err, result) {
                 should.not.exist(err);
                 should.exist(result);
                 done();

@@ -2,7 +2,7 @@ var setCronJob = require('../index');
 var cronJob = new setCronJob('xxxxxxxx');
 
 //Get server time
-cronJob.server.get(function (err, result) {
+cronJob.server.time(function (err, result) {
     printResult(err, result);
 });
 
