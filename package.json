@@ -14,7 +14,12 @@
   "keywords": [
     "node",
     "cron",
-    "schedular"
+    "scheduler",
+    "online-scheduler",
+    "setcronjob",
+    "job",
+    "task"
+
   ],
   "author":{
    "name": "Prince Soni",
