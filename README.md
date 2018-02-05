@@ -335,6 +335,23 @@ cronJob.group.empty(params, function (err, result) {
 
 ```
 
+
+```javascript
+
+//Lookup group
+var params = {
+    id: 'xyz'
+};
+cronJob.group.lookup(params, function (err, result) {
+    if (err) {
+        console.log("Error : ", err)
+    } else {
+        console.log("Result : ", result)
+    }
+});
+
+```
+
 ## Server Job:
 ```javascript
 var setCronJob = require('setcronjob');
@@ -410,6 +427,7 @@ To run tests with coverage type npm coverage.
 ## Contributors
 
 Originally authored by  [@princesoni1989](https://github.com/princesoni1989)
+Modified by [@drsukh](https://github.com/drsukh)
 
 ## LICENSE
 
