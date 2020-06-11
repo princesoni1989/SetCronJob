@@ -35,6 +35,10 @@
       "empty": {
         "method": "group.empty",
         "type": "get"
+      },
+      "lookup": {
+	"method": "group.lookup",
+        "type": "get"
       }
     },
     "server": {
